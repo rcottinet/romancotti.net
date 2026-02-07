@@ -5,7 +5,7 @@ pubDatetime: 2024-07-30T22:00:00.000Z
 modDatetime: 2024-07-30T22:00:00.000Z
 slug: my-first-homelab
 featured: true
-draft: false
+draft: true
 tags:
   - selfhost
   - homelab
