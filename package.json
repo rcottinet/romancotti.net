@@ -5,6 +5,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build && jampack ./dist",
+    "tina": "npx tinacms dev -c 'astro dev'",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
