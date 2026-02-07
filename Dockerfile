@@ -1,10 +1,14 @@
 # Base stage for building the static files
 FROM node:lts AS base
 WORKDIR /app
+
+# Enable pnpm
+RUN corepack enable
+
 COPY package*.json ./
-RUN npm install
+RUN pnpm install
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 # Runtime stage for serving the application
 FROM nginx:mainline-alpine-slim AS runtime
